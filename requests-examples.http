@@ -1,0 +1,35 @@
+# примеры API-запросов
+@baseUrl = http://localhost:8000
+
+# получение объявлений
+GET {{baseUrl}}/courses/
+Content-Type: application/json
+
+###
+POST {{baseUrl}}/courses/
+Content-Type: application/json
+
+{
+  "name": "hello_world"
+}
+
+###
+
+PATCH {{baseUrl}}/courses/9/
+Content-Type: application/json
+
+{
+  "name": "WestCost"
+}
+
+###
+GET {{baseUrl}}/courses/?name=Python
+Content-Type: application/json
+
+###
+GET {{baseUrl}}/courses/9/
+Content-Type: application/json
+
+###
+DELETE {{baseUrl}}/courses/1/
+Content-Type: application/json
